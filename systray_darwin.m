@@ -67,7 +67,7 @@ withParentMenuId: (int)theParentMenuId
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  self->statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+  self->statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
   self->menu = [[NSMenu alloc] init];
   [self->menu setAutoenablesItems: FALSE];
   [self->statusItem setMenu:self->menu];
