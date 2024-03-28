@@ -81,6 +81,7 @@ withParentMenuId: (int)theParentMenuId
 
 - (void)setIcon:(NSImage *)image {
   statusItem.button.image = image;
+  statusItem.button.imageScaling = NSImageScaleProportionallyUpOrDown;
   [self updateTitleButtonStyle];
 }
 
